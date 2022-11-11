@@ -2,12 +2,6 @@ import './App.css';
 import React from "react";
 import {
   BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  Link,
-  Outlet,
-  useNavigate,
   useRoutes
 } from "react-router-dom";
 import Login from './Components/Login';
