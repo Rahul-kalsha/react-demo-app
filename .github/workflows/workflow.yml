@@ -22,9 +22,9 @@ jobs:
         run: npm install && npm run build
       
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: develop
+          # branch: develop
           folder: build # The folder the action should deploy.
           clean: true
 
