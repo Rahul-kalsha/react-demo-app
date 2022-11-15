@@ -16,14 +16,15 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
 
       - name: Install and build
         run: npm install && npm run build
       
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@4.1.1
-      #   with:
-      #     branch: develop
-      #     folder: build # The folder the action should deploy.
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4
+        with:
+          branch: develop
+          folder: build # The folder the action should deploy.
+          clean: true
 
