@@ -1,10 +1,12 @@
-name: Build
+name: SonarCloud Analysis
 on:
   push:
-    branches:
-      - main
+    branches: [ "develop" ]
   pull_request:
     types: [opened, synchronize, reopened]
+    branches: [ "develop" ]
+permissions:
+  pull-requests: read # allows SonarCloud to decorate PRs with analysis results
 jobs:
   sonarcloud:
     name: SonarCloud
