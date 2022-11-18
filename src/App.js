@@ -24,6 +24,7 @@ const RouteData = () => {
         // { path: "sent", element: <SentInvoices /> },
       ],
     },
+    
     // Not found routes work as you'd expect
     // { path: "*", element: <NotFound /> },
   ]);
